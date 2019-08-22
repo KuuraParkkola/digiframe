@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.Display {
+  width: 100vw;
+  height: 100vh;
+}
+
+.Display::before {
+  z-index: 0;
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height:  100%;
+  background-image: url('/frame/museo.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+}
+
+.Standby {
+  transition: background-color 2s, filter 2s;
+  background-color: rgb(207, 207, 207);
+  filter: grayscale(100%) invert(60%) brightness(30%);
+}
+
+.Active {
+  transition: background-color 2s, filter 2s;
+  background-color: rgb(223, 205, 183);
+  filter: grayscale(20%) invert(0%) brightness(100%);
+}
+
+.Image {
+  z-index: 2;
+  position: absolute;
+  top: 0; left: 0;
+  bottom: 0; right: 0;
+  overflow: hidden;
+}
+
+.Info {
+  z-index: 3;
+  position: absolute;
+  color: white;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 10px;
+  height: 18px;
+  background-color: rgba(141, 141, 141, 0.643);
+  left: 0;
+  right: 0;
+  top: 10px;
+}
+
+.Img {
+  position: absolute;
+  top: -50%; bottom: -50%;
+  left: -50%; right: -50%;
+  margin: auto;
+}
+
+.Wide {
+  height: 100%;
+  width: auto;
+}
+
+.Tall {
+  width: 100%;
+  height: auto;
+}
