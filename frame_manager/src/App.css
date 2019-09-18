@@ -1,33 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
+  height: 100vh;
+  width: 100vw;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.Sidenav {
+  background-color: rgb(125, 206, 231);
+  min-height: 100%;
+  width: 300px;
+  float: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Brand {
+  width: 100%;
+  height: 45px;
+  background-color: rgb(47, 199, 245);
+  text-align: left;
 }
 
-.App-link {
-  color: #61dafb;
+.Navigation {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Btn {
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  transition: box-shadow 5s;
+}
+
+.Btn:hover {
+  box-shadow: 0 0 5px 3px rgba(0, 69, 133, 0.3);
+  transition: box-shadow 20s;
+}
+
+.BtnTitle {
+  font-size: 20px;
+  font-weight: normal;
+  height: 50px;
+}
+
+.BtnSlide {
+  -webkit-transition: max-height 0.7s;
+  transition: max-height 0.7s;
+}
+
+.Display {
+  background-color: rgb(169, 218, 233);
+  height: 100%;
+  width: 100%;
+  text-align: left;
+}
+
+.Alerts {
+  float: right;
+  width: 150px;
+  height: 45px;
+  background-color: rgb(227, 227, 255);
+  border-radius: 0 0 0 10px;
 }
